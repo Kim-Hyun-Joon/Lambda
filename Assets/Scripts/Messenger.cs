@@ -18,6 +18,8 @@ public class Messenger : MonoBehaviour
         onSend += SendMail;
         onSend += SendMoney;
         onSend += man => { Debug.Log("Assainate " + man); };
+
+        onSend += (string man) => { Debug.Log("Assanate " + man); };
     }
 
     private void Update() {
